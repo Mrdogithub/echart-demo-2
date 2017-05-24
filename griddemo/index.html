@@ -1,0 +1,82 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="" href="./css/grid.css">
+    <link rel="stylesheet" type="" href="./deps/bootstrap/css/bootstrap.css">
+    <script src="./deps/jquery/jquery.js"></script>
+    <script src="./deps/bootstrap/js/bootstrap.js"></script>
+    <script src="./data/data.js"></script>
+    <title>show risk grid</title>
+</head>
+
+<body>
+    <div class="container-fluid demo-container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="demo-canvas-container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="demo-left">
+                                <table class="demo-unit" cellspacing='0' colspacing='0'>
+                                    <!-- 此处根据levelData动态生成 -->
+                                    <!--<tr>
+                                         <td class='demo-label'>BG</td>
+                                         <td class='demo-value'></td>
+                                     </tr>-->
+                                </table>
+                                <!--canvas-->
+                                <div id="host"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row demo-datatable">
+            <div class="col-xs-12">
+                <table cellspacing="0" colspacing="0" style="width:100%" id="riskTable">
+                    <colgroup>
+                        <col style="width:10%;" />
+                        <col style="width:10%;" />
+                        <col style="width:10%;" />
+                        <col style="width:16%;" />
+                        <col style="width:16%;" />
+                        <col style="width:18%;" />
+                        <col style="width:20%;" />
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <td class="demo-label">Item<br>Involved</td>
+                            <td class="demo-label">Tier 1<br>Supplier</td>
+                            <td class="demo-label">Tier N<br>Supplier</td>
+                            <td class="demo-label">影响产品</td>
+                            <td class="demo-label">影响发货<br>料本金额</td>
+                            <td class="demo-label">影响市场合同</td>
+                            <td class="demo-label">Mitigation Plan</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!--此处根据页面数据动态生成-->
+                        <!--<tr>
+                         <td class="demo-value"></td>
+                         <td class="demo-value"></td>
+                         <td class="demo-value"></td>
+                         <td class="demo-value"></td>
+                         <td class="demo-value"></td>
+                         <td class="demo-value"></td>
+                         <td class="demo-value"></td>
+                     </tr>-->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./deps/flyingon/flyingon.js"></script>
+    <script type="text/javascript" src="./deps/quickgrid/quickgrid.js"></script>
+    <script type="text/javascript" src="./grid.js"></script>
+
+</body>
+
+</html>

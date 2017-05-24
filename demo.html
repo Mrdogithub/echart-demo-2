@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+
+<body style="height: 100%; margin: 0;position: relative;">
+    <!--   <div class="navbar">
+      <h1></h1>
+  </div> -->
+
+    <div class="alert alert-danger alert-dismissible">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <strong>告警!</strong> 日本地震！请尽快查看突发事件对供应商的影响程度！
+    </div>
+
+    <!--   <div class = "warning-wrapper">
+      <div class = "img openDetail"><img src = "images/icon.png" width = "35" height = "35" /></div>
+      <div class="alert alert-warning" role="alert">
+        <div class = "content">
+          <p>Event: 2016/01/02 日本地震</p>
+          <p>Risk Level: High</p>
+        </div>
+      </div>
+  </div> -->
+
+    <!--   <div class = "logo-wrapper">
+    <img src = "images/logo.png" width = "35" height = "auto" />
+  </div> -->
+    <div class="detail">
+        <div class="detail-content">
+
+        </div>
+        <div class="detail-close">
+            <i class="fa fa-close"></i>
+        </div>
+    </div>
+
+    <div id="container" style="height: 100%;"></div>
+
+    <div id="detail-wrapper">
+        <div class="toggle-button" style="cursor:pointer">
+            <i class="fa fa-chevron-up" id="btn-icon"></i> 查看告警
+        </div>
+        <div class="content-wrapper">
+            <div class="siteLocation"></div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Event No</th>
+                        <th>Date</th>
+                        <th>Event</th>
+                        <th>Event Type</th>
+                        <th>Risk Level</th>
+                        <th>Items Involved</th>
+                    </tr>
+                </thead>
+                <tbody class="trList"> </tbody>
+            </table>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/echarts-all-3.js"></script>
+    <script type="text/javascript" src="js/ecStat.min.js"></script>
+    <script type="text/javascript" src="js/dataTool.min.js"></script>
+    <script type="text/javascript" src="js/world.js"></script>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="bootstrap.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="./griddemo/addGrid.js"></script>
+</body>
+
+</html>

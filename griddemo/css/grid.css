@@ -1,0 +1,113 @@
+.demo-container {
+    min-width: 700px;
+    padding: 10px 0;
+    position: relative;
+    background-color: rgb(239, 239, 239);
+}
+
+.demo-container .demo-left {
+    position: relative;
+}
+
+.demo-container .demo-unit {
+    width: 100%;
+    border: 0;
+}
+
+.demo-container .demo-unit .demo-label {
+    box-sizing: border-box;
+    width: 140px;
+    border-top: 1px solid white;
+    height: 45px;
+    text-align: center;
+    font-family: 'Arial,sans-serif';
+    font-weight: bold;
+    color: rgb(0, 21, 77);
+    background-color: rgb(201, 209, 224);
+}
+
+.demo-container .demo-unit .demo-value {
+    border: 1px solid white;
+    background-color: rgb(229, 232, 240);
+}
+
+.demo-container .demo-unit .demo-label.demo-first {
+    border-top: none;
+}
+
+.demo-container .demo-unit .demo-label.demo-last {
+    border-bottom: none;
+}
+
+.demo-container .demo-left #host {
+    width: 752px;
+    height: 444px;
+    position: absolute;
+    top: 2px;
+    left: 140px;
+}
+
+.demo-container .demo-left .demo-icon {
+    width: 35px;
+    height: 35px;
+    z-index: 1001;
+    position: absolute;
+}
+
+.demo-canvas-container {
+    position: relative;
+}
+
+
+/*popup*/
+
+#host .popover.top>.arrow:after {
+    bottom: 1px;
+    margin-left: -10px;
+    content: " ";
+    border-top-color: rgb(255, 255, 136);
+    border-bottom-width: 0;
+}
+
+#host .popover {
+    background-color: rgb(255, 255, 136);
+}
+
+.row.demo-datatable {
+    padding-top: 10px;
+}
+
+.demo-datatable .demo-label {
+    color: white;
+    width: 80px;
+    border: 1px solid white;
+    height: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 13px;
+    background-color: rgb(84, 115, 173);
+}
+
+.demo-datatable .demo-value {
+    color: black;
+    width: 80px;
+    padding: 0 5px;
+    border: 1px solid white;
+    height: 30px;
+    text-align: center;
+    font-size: 13px;
+    background-color: rgb(229, 232, 240);
+}
+
+.demo-datatable .demo-value.content-left {
+    text-align: left;
+}
+
+.demo-datatable .demo-value.demo-mitigation-plan {
+    text-decoration: underline;
+    color: rgb(84, 115, 173);
+}
+
+.demo-datatable tr.demo-highlight td {
+    background-color: rgb(255, 255, 136);
+}
